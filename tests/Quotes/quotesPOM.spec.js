@@ -16,7 +16,9 @@ test('quotesPOM',async({page})=>{
 
     // ! quotes
     let quotesObj=new quotes(page)
-    await quotesObj.actions(quotesData.subject,quotesData.billaddress,quotesData.shippingaddress,quotesData.Quantity)
+    await quotesObj.actions(quotesData.subject,quotesData.billaddress,quotesData.shippingaddress,quotesData.Quantity
+        
+    )
 
 
 })
