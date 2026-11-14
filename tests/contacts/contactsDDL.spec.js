@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test'
 import excel, { Workbook } from 'exceljs'
 import path  from 'node:path'
-import logindata from '../../testdata/login.json'
+import logindata from '../../testdata/JSON_Data/loginData.json'
 
 test('contactsExcel',async ({page}) => {
     // ! Login into the localhost.
