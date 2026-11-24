@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test'
-import logindata from '../../testdata/login.json'
+import logindata from '../../testdata/JSON_Data/loginData.json'
 import { Window, window_handling } from '../../Utils_function/window_handling'
 import { drop_down } from '../../Utils_function/drop_down'
 

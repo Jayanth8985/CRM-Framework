@@ -9,8 +9,8 @@ import { leaddata } from '../../POM/lead'
 
 test('using POM',async({page})=>{
     let loginobj=new login(page)
-    await loginobj.launch(logindata.url)
-    await loginobj.actions(logindata.username,logindata.password)
+    // await loginobj.launch(logindata.url)
+    await loginobj.actions(logindata.urlogindata.username,logindata.password)
 
     // ! From leads.js
     let leadobj=new leaddata(page)

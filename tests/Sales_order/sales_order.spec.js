@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test'
-import logindata from '../../Login/login.json'
+import logindata from '../../testdata/JSON_Data/loginData.json'
 import { log } from 'node:console'
 
 test('create Trouble_Tickets',async({page})=>{
@@ -52,3 +52,4 @@ test('create Trouble_Tickets',async({page})=>{
     // ! Validateing by using Assertions.
     await expect(page.locator('span[class="lvtHeaderText"]')).toContainText('Sales')
 })
+

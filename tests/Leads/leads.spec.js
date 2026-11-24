@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
-import logindata from '../../Login//login.json'
-import leaddata from '../../Lead//lead.json'
+import logindata from '../../testdata/JSON_Data/leadsdata.json'
+import leaddata from '../../testdata/JSON_Data/leadsdata.json'
 
 test.describe('Tests',()=>{
     test.beforeEach(async({page})=>{
@@ -60,7 +60,7 @@ test.describe('Tests',()=>{
     })
 
     // ! Createing Organisation
-    // test.skip('create organisation',async ({page}) => {
+    // test.skip('create organisation',as  ync ({page}) => {
     //     await page.getByRole('link',{name:'Organizations'}).click()
     //     await page.getByRole('img',{name:'Create Organization...'}).click()
     //     await page.locator('input[name="accountname"]').fill('Jayanth Technologies pvt Limited')

@@ -2,19 +2,21 @@ export class login{
     #username
     #password
     #loginbtn
+    #page
     
 
     constructor(page){
-        this.page=page
+        this.#page=page
         this.#username= page.locator('input[name="user_name"]')
         this.#password=page.locator('input[name="user_password"]')
         this.#loginbtn=page.getByRole('button',{name:'Login'})
     }
 
-    async launch(url){
-        await this.page.goto(url)
-    }
-    async actions(username,password){
+    // async launch(url){
+    //     await this.page.goto(url)
+    // }
+    async actions(URL,username,password){
+        await this.#page.goto(URL)
         await this.#username.fill(username)
         await this.#password.fill(password)
         await this.#loginbtn.click()

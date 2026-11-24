@@ -5,6 +5,7 @@ import { login } from '../../POM/login'
 import loginData from '../../testdata/JSON_Data/loginData.json'
 
 // ! contacts files
+// import { contactsPage } from '../../POM/contact'
 import { contactsPage } from '../../POM/contact'
 import contactData from '../../testdata/JSON_Data/contactData.json'
 

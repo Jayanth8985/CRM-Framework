@@ -1,5 +1,5 @@
 import { expect } from "@playwright/test";
-export class contactsPage{
+class contactsPage{
     #selcontact
     #createContact
     #dropdown
@@ -30,3 +30,5 @@ export class contactsPage{
         await expect(this.#validate).toContainText(lastname)
     }
 }
+export {contactsPage}
+

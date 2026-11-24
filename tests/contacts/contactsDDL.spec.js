@@ -12,7 +12,7 @@ test('contactsExcel',async ({page}) => {
 
     // ! Read excel file
     let book=new Workbook()
-    await book.xlsx.readFile(path.join(__dirname,'../../testdata/organisation/organisations.xlsx'))
+    await book.xlsx.readFile(path.join(__dirname,'../../testdata/Excel_Data/CRMdata.xlsx'))
     let sheet=book.getWorksheet('contacts')
 
     let contact_details=[]
